@@ -2,5 +2,8 @@
 - hosts: all
 - import_playbook: ../static-assignments/common-del.yml
 
--hosts: uat-webservers
--import_playbook: ../static-assignments/uat-webservers.yml
+- hosts: _uat_web
+  remote_user: ec2-user
+  tasks:
+  ...
+  - import_playbook: ../static-assignments/uat-webservers.yml
