@@ -15,12 +15,12 @@
   become: true
   ansible.builtin.git:
     repo: https://github.com/Ooladada/tooling.git
-    dest: /var/www/html
+    dest: /dada
     force: yes
 
 - name: copy html content to one level up
   become: true
-  command: cp -r /var/www/html/html/ /var/www/
+  command: cp -r /dada/html
 
 - name: Start service httpd, if not started
   become: true
