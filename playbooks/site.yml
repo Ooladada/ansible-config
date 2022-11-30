@@ -7,5 +7,5 @@
     - always
 
 - name: Loadbalancers assignment
-  import_playbook: ../static-assignments/loadbalancers.yml
+  import_playbook: ../static-assignments/lb.yml
   when: load_balancer_is_required 
