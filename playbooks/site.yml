@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
 - name: Include dynamic variables
   import_playbook: ../static-assignments/common.yml
   include: ../dynamic-assignments/env-vars.yml

@@ -7,7 +7,7 @@
       with_first_found:
         - files:
             - uat.yml
-            - stage.yml
+            - staging.yml
             - prod.yml
             - dev.yml
           paths:
